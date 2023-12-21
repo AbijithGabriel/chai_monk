@@ -160,6 +160,10 @@ a:focus {
 .custom_nav-container {
   padding: 0;
 }
+.navbar-bg{
+  background-color: #23282b ;
+
+}
 
 .custom_nav-container .navbar-nav {
   padding-left: 18%;
