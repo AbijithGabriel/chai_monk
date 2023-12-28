@@ -1,963 +1,2085 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="../images/favicon.png" type="" />
 
-<head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="../images/favicon.png" type="">
+    <title>Chai_Monk</title>
 
-  <title> Chai_Monk </title>
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <!--owl slider stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <!-- nice select  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css"
+      integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ=="
+      crossorigin="anonymous"
+    />
+    <!-- font awesome style -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" />
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <!-- nice select  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
-  <!-- font awesome style -->
-  <link href="../css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="../css/responsive.css" rel="stylesheet" />
+  </head>
 
-  <!-- Custom styles for this template -->
-  <link href="../css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="../css/responsive.css" rel="stylesheet" />
+  <body class="sub_page">
+    <div class="hero_area">
+      <!-- header section strats -->
+      <header class="header_section">
+        <div class="container">
+          <nav
+            class="navbar navbar-expand-lg custom_nav-container fixed-top navbar-bg p-2"
+          >
+            <a class="navbar-brand pl-md-5" href="index.html">
+              <span> ChaiMonk </span>
+            </a>
 
-</head>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class=""> </span>
+            </button>
 
-<body class="sub_page">
-
-  <div class="hero_area">
-    <div class="bg-box">
-      <img src="../images/hero-bg.jpg" alt="">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="../../index.html">Home </a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="../html/menu.html"
+                    >Menu <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/book.html">Book Table</a>
+                </li>
+              </ul>
+              <div class="user_option">
+                <a href="" class="order_online"> Order Online </a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- end header section -->
     </div>
-    <!-- header section strats -->
-    <header class="header_section">
+
+    <!-- food section -->
+
+    <section class="food_section layout_padding">
       <div class="container">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand" href="index.html">
-            <span>
-              ChaiMonk
-            </span>
-          </a>
+        <div class="heading_container heading_center">
+          <h2>Our Menu</h2>
+        </div>
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
-          </button>
+        <ul class="filters_menu">
+          <li class="active" data-filter="*">All</li>
+          <li data-filter=".chai">Chai</li>
+          <li data-filter=".coffee">Coffee</li>
+          <li data-filter=".tea-without-milk">Tea Without Milk</li>
+          <li data-filter=".hot-beverages">Hot Beverages</li>
+          <li data-filter=".cold-beverages">Cold Beverages</li>
+          <li data-filter=".fresh-juice">Fresh Juice</li>
+          <li data-filter=".soda">Soda</li>
+          <li data-filter=".milk-shake">Milk Shake</li>
+          <li data-filter=".ice-cream-shakes">Ice Cream Shakes</li>
+          <li data-filter=".avil-milk">Avil Milk</li>
+          <li data-filter=".mojitos">Mojitos</li>
+          <li data-filter=".kulukkis">Kulukkis</li>
+          <li data-filter=".ice-cream">Ice Creams</li>
+          <li data-filter=".momos-non-veg">Momos Non Veg</li>
+          <li data-filter=".veg">Momos Veg</li>
+          <li data-filter=".staters">Staters</li>
+          <li data-filter=".sub-roll">Sub Roll</li>
+          <li data-filter=".wraps">Wraps</li>
+          <li data-filter=".fries">Fries</li>
+          <li data-filter=".maggies">Maggies</li>
+          <li data-filter=".burgers">Burgers</li>
+          <li data-filter=".sandwich">Sandwich</li>
+          <li data-filter=".nachos">Nachos</li>
+          <li data-filter=".egg">Egg</li>
+        </ul>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  mx-auto ">
-              <li class="nav-item">
-                <a class="nav-link" href="../../index.html">Home </a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="../html/menu.html">Menu <span class="sr-only">(current)</span> </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="../html/book.html">Book Table</a>
-              </li>
-            </ul>
-            <div class="user_option">
-              <a href="" class="user_link">
-                <i class="fa fa-user" aria-hidden="true"></i>
-              </a>
-              <a class="cart_link" href="#">
-                <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                  <g>
-                    <g>
-                      <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                   c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                   C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                   c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                   C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                    </g>
-                  </g>
-                  <g>
-                    <g>
-                      <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                   c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                    </g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                  <g>
-                  </g>
-                </svg>
-              </a>
-              <form class="form-inline">
-                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </form>
-              <a href="" class="order_online">
-                Order Online
-              </a>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
-    <!-- end header section -->
-  </div>
-
-  <!-- food section -->
-
-  <section class="food_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Our Menu
-        </h2>
-      </div>
-
-      <ul class="filters_menu">
-        <li class="active" data-filter="*">All</li>
-        <li data-filter=".burger">Burger</li>
-        <li data-filter=".pizza">Pizza</li>
-        <li data-filter=".pasta">Pasta</li>
-        <li data-filter=".fries">Fries</li>
-      </ul>
-
-      <div class="filters-content">
-        <div class="row grid">
-          <div class="col-sm-6 col-lg-4 all pizza">
+        <div class="filters-content">
+          <div class="row grid">
+       
+          <!--  Chai menu start here -->
+          <div class="col-sm-6 col-lg-4 all chai">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f1.png" alt="">
+                  <img src="../images/menus/chai/chai-2.png" alt="chai"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Chai</h5>
                   <div class="options">
-                    <h6>
-                      $20
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 10</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all burger">
+
+          <div class="col-sm-6 col-lg-4 all chai">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f2.png" alt="">
+                  <img src="../images/menus/chai/ginger chai.png" alt="giner chai"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Ginger Chai</h5>
                   <div class="options">
-                    <h6>
-                      $15
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 20</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
+
+
+          <div class="col-sm-6 col-lg-4 all chai">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f3.png" alt="">
+                  <img src="../images/menus/chai/masala chai.png" alt="masala chai"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Masala Chai</h5>
                   <div class="options">
-                    <h6>
-                      $17
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 20</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
+
+          <div class="col-sm-6 col-lg-4 all chai">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f4.png" alt="">
+                  <img src="../images/menus/chai/elaichi chai.png" alt="elaichi chai"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Pasta
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Elaichi Chai</h5>
                   <div class="options">
-                    <h6>
-                      $18
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 20</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/saffron chai.png" alt="saffron chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Saffron Chai</h5>
+                  <div class="options">
+                    <h6>₹ 25</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/chai.png" alt="monk special chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Monk Special Chai</h5>
+                  <div class="options">
+                    <h6>₹ 25</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/tandoori chai.png" alt="tandoori chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Thandoori Chai</h5>
+                  <div class="options">
+                    <h6>₹ 30 / 35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/Tandoori_masala_chai.png" alt="thandoori masala chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Thandoori Masala Chai</h5>
+                  <div class="options">
+                    <h6>₹ 35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/masala chai.png" alt="thandoori ginger chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Tandoori Ginger Chai</h5>
+                  <div class="options">
+                    <h6>₹ 35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all chai">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai/masala chai.png" alt="tandoori saffron chai"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Tandoori Saffron Chai</h5>
+                  <div class="options">
+                    <h6>₹ 35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Chai menu end here-->
+
+          <!-- ********************** -->
+
+          <!--  Coffee menu start here-->
+
+          <!-- Coffee menu end here -->
+
+          <!-- ********************** -->
+
+          <!--  Tea without milk menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="black tea/black coffee"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Black Tea/ Black Coffee</h5>
+                  <div class="options">
+                    <h6>₹ 10</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="mint black tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Mint Black Tea</h5>
+                  <div class="options">
+                    <h6>₹ 10</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="lemon tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Lemon Tea</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="lemon tea mint"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Lemon Tea Mint</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="ginger black tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Ginger Black Tea</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="elaichi black tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Elaichi Black Tea</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all tea-without-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="green tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Green Tea</h5>
+                  <div class="options">
+                    <h6>₹ 20</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tea without milk  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Hot beverages menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all hot-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="milk"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Milk</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hot-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="boost/horlicks"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Boost/Horlicks</h5>
+                  <div class="options">
+                    <h6>₹ 20</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hot-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="saffron milk"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Saffron Milk</h5>
+                  <div class="options">
+                    <h6>₹ 25</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hot-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="Kashaya"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Kashaya</h5>
+                  <div class="options">
+                    <h6>₹ 20</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all hot-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="chocolate coffee"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chocolate Coffee</h5>
+                  <div class="options">
+                    <h6>₹ 30</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Hot beverages  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Cold beverages menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all cold-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="cold coffee"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cold Coffee</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cold-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="cold horlicks"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cold Horlicks</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cold-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="cold boost"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cold Boost</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cold-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="ice tea"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Ice Tea</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all cold-beverages">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/chai" alt="cold badam"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cold Badam</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Cold beverages  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Fresh juice menu start here -->
+
+          <!-- Fresh juice  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Soda menu start here -->
+
+          <!-- Soda  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Milk shake menu start here -->
+
+          <!-- Milk shake  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Ice cream shakes  shake menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all ice-cream-shakes">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream milk shakes/vanilla.png" alt="Vanilla"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Vanilla</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream-shakes">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream milk shakes/strawbery.png" alt="Strawberry"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Strawberry</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream-shakes">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream milk shakes/pista.png" alt="Pista"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Pista</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream-shakes">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream milk shakes/butterskotch.png" alt="Butterscotch"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Butterscotch</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- Ice cream shakes  shake  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Avil milk menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all avil-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/avil milk/AVIL MILK.png" alt="Avil Milk"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Avil Milk</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all avil-milk">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/avil milk/AVIL MILK WITH ICE CREAM.png" alt="Avil Milk With Icecream"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Avil Milk With Icecream</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avil milk  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Mojitos menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/limeMojito.png" alt="Lime Mojito"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Lime Mojito</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/BlueCuracaomojito.png" alt="Blue Curaco"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Blue Curaco</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/PassionFruitMojito.png" alt="Passionfruit"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Passionfruit</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/strawberrymojito.png" alt="Strawberry"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Strawberry</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/greenapplemojito.png" alt="Green Apple"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Green Apple</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all mojitos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/mojito/pineapplemojito.png" alt="Pineapple"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Pineapple</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mojitos  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Kulukkis menu start here -->
+
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/lime_kulki.png" alt="Lime Kulki"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Lime Kulki</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/blue_curaco.png" alt="Blue Curaco"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Blue Curaco</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/passion_fruit.png" alt="Passionfruit"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Passionfruit</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/strawberry.png" alt="Strawberry"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Strawberry</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/green apple.png" alt="Green Apple"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Green Apple</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all kulukkis">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/kulki/pineapple.png" alt="Pineapple"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Pineapple</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Kulukkis  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Ice creams menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all ice-cream">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream/fruit bowl.png" alt="Fruit Bowl"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Fruit Bowl</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream/fruit salad.png" alt="Fruit Salad"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Fruit Salad</h5>
+                  <div class="options">
+                    <h6>₹ 55</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream/dry fruits salad.png" alt="Dry Fruit Salad"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Dry Fruit Salad</h5>
+                  <div class="options">
+                    <h6>₹ 75</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all ice-cream">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/ice cream/gudbud icecream.png" alt="Gadbad"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Gadbad</h5>
+                  <div class="options">
+                    <h6>₹ 70</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ice creams  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Momos (Steam/fried) menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all momos-non-veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/momos/CHICKEN MOMOS.png" alt="Chicken Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all momos-non-veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/momos/CHICKEN HARIYALI MOMOS.png" alt="Chicken Hariyali Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Hariyali Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 100</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all momos-non-veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/momos/CHICKEN PERI PERI MOMOS.png" alt="Chicken Peri Peri Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Peri Peri Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 100</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all momos-non-veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/momos/CHICKEN SHEZWAN MOMO.png" alt="Chicken Shezwan Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Shezwan Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 110</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all momos-non-veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/momos/CHICKEN TIKKA MOMOS.png" alt="Chicken Tikka Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Tikka Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 110</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Momos (Steam/fried)  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Momos veg menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/mixvegmomo.png" alt="Mix Veg Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Mix Veg Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 70</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/cornmomo.png" alt="Corn Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Corn Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/cmomo.png" alt="Corn And Cheese Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Corn And Cheese Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 110</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/momo.png" alt="Paneer Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Paneer Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 110</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/" alt="Mushroom Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Mushroom Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 120</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all veg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/veg/monkspecialmomo.png" alt="Monk's Magic Momo"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Monk's Magic Momo (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 150</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Momos veg  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Staters menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/potato garlic shorts.png" alt="Potato Garlic Shots"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Potato Garlic Shots (10pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/veg cheese balls.png" alt="Veg Cheese Ball"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Cheese Ball (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/veg cheesy pizza sticks.png" alt="Veg Cheesy Pizza Sticks"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Cheesy Pizza Sticks (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/cheese corn nuggets.png" alt="Cheese Corn Nuggets"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cheese Corn Nuggets (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/chicken popcorn.png" alt="Chicken Popcorn"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Popcorn (10pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/chicken_fingers.png" alt="Chicken Fingers"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Fingers (6pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 100</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/chicken_nuggets.png" alt="Chicken Nuggets"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Nuggets (6pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 100</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/chicken_strips.png" alt="Chicken Strips"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Strips (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 130</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all staters">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/staters/aloo_tikki.png" alt="Aloo Tikki"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Aloo Tikki (5pcs)</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Staters  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Sub roll menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all sub-roll">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/subroll/Chickenhotdog.png" alt="Chicken Hot Dog"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Hot Dog</h5>
+                  <div class="options">
+                    <h6>₹ 70</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all sub-roll">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/subroll/vegloadedgun.png" alt="Veg Loaded Dog"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Loaded Gun</h5>
+                  <div class="options">
+                    <h6>₹ 70</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all sub-roll">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/subroll/Zingersubroll.png" alt="Zinger Subroll"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Zinger Subroll</h5>
+                  <div class="options">
+                    <h6>₹ 90</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sub roll  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Wraps menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all wraps">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/wraps/veg wrap.png" alt="Veg Wrap"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Wrap</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all wraps">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/wraps/paneer wrap.png" alt="Paneer Wrap"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Paneer Wrap</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all wraps">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/wraps/egg wrap.png" alt="Egg Wrap"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Egg Wrap</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all wraps">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/wraps/chicken wrap.png" alt="Chicken Wrap"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Wrap</h5>
+                  <div class="options">
+                    <h6>₹ 60</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wraps  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Fries menu start here -->
+
           <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f5.png" alt="">
+                  <img src="../images/menus/FRENCH FRIES/NORMAL FRIES.png" alt="Normal Fries"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    French Fries
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Normal Fries</h5>
                   <div class="options">
-                    <h6>
-                      $10
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 70</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pizza">
+
+          <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f6.png" alt="">
+                  <img src="../images/menus/FRENCH FRIES/PERI PERI FRIES.png" alt="Peri Peri Fries"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Pizza
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Peri Peri Fries</h5>
                   <div class="options">
-                    <h6>
-                      $15
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 80</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all burger">
+
+          <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f7.png" alt="">
+                  <img src="../images/menus/FRENCH FRIES/CHEESE FRIES.png" alt="Cheese Fries"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Tasty Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Cheese Fries</h5>
                   <div class="options">
-                    <h6>
-                      $12
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 90</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all burger">
+
+          <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f8.png" alt="">
+                  <img src="../images/menus/FRENCH FRIES/" alt="Peri Peri Cheese Fries"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Tasty Burger
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Peri Peri Cheese Fries</h5>
                   <div class="options">
-                    <h6>
-                      $14
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 100</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-6 col-lg-4 all pasta">
+
+          <div class="col-sm-6 col-lg-4 all fries">
             <div class="box">
               <div>
                 <div class="img-box">
-                  <img src="../images/f9.png" alt="">
+                  <img src="../images/menus/FRENCH FRIES/CHICKEN FRIESS.png" alt="Chicken Fries"  loading="lazy"/>
                 </div>
                 <div class="detail-box">
-                  <h5>
-                    Delicious Pasta
-                  </h5>
-                  <p>
-                    Veniam debitis quaerat officiis quasi cupiditate quo, quisquam velit, magnam voluptatem repellendus sed eaque
-                  </p>
+                  <h5>Chicken Fries</h5>
                   <div class="options">
-                    <h6>
-                      $10
-                    </h6>
-                    <a href="">
-                      <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
-                        <g>
-                          <g>
-                            <path d="M345.6,338.862c-29.184,0-53.248,23.552-53.248,53.248c0,29.184,23.552,53.248,53.248,53.248
-                         c29.184,0,53.248-23.552,53.248-53.248C398.336,362.926,374.784,338.862,345.6,338.862z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M439.296,84.91c-1.024,0-2.56-0.512-4.096-0.512H112.64l-5.12-34.304C104.448,27.566,84.992,10.67,61.952,10.67H20.48
-                         C9.216,10.67,0,19.886,0,31.15c0,11.264,9.216,20.48,20.48,20.48h41.472c2.56,0,4.608,2.048,5.12,4.608l31.744,216.064
-                         c4.096,27.136,27.648,47.616,55.296,47.616h212.992c26.624,0,49.664-18.944,55.296-45.056l33.28-166.4
-                         C457.728,97.71,450.56,86.958,439.296,84.91z" />
-                          </g>
-                        </g>
-                        <g>
-                          <g>
-                            <path d="M215.04,389.55c-1.024-28.16-24.576-50.688-52.736-50.688c-29.696,1.536-52.224,26.112-51.2,55.296
-                         c1.024,28.16,24.064,50.688,52.224,50.688h1.024C193.536,443.31,216.576,418.734,215.04,389.55z" />
-                          </g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                        <g>
-                        </g>
-                      </svg>
-                    </a>
+                    <h6>₹ 125</h6>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+          <!-- Fries  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Maggies menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/PLAIN MAGGIE.png" alt="Plain Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Plain Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/VEG MAGGIE.png" alt="Veg Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/EGG MAGGIE.png" alt="Egg Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Egg Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/CORN MAGGIE.png" alt="Corn Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Corn Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/PEPPER MAGGIE.png" alt="Pepper Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Pepper Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/CHILLY MAGGIE.png" alt="Chilly Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chilly Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/CHILLY MAGGIE.png" alt="Chilly Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chilly Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 45</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/PANEER MAGGIE.png" alt="Paneer Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Paneer Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 55</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/CHICKEN MAGGIE.png" alt="Chicken Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 55</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/MIXED MAGGIE.png" alt="Mixed Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Mixed Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 65</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all maggies">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/maggie/" alt="Mixed Maggie"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Monk's Special Maggie</h5>
+                  <div class="options">
+                    <h6>₹ 75</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Maggies  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Burgers menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all burgers">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/burger/veg burger.png" alt="Veg Burger"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Burger</h5>
+                  <div class="options">
+                    <h6>₹ 65</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all burgers">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/burger/egg burger.png" alt="Egg Burger"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Egg Burger</h5>
+                  <div class="options">
+                    <h6>₹ 70</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all burgers">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/burger/chicken burger.png" alt="Chicken Burger"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Burger</h5>
+                  <div class="options">
+                    <h6>₹ 80</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all burgers">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/burger/spicy chicken burger.png" alt="Spicy Chicken Grill Burger"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Spicy Chicken Grill Burger</h5>
+                  <div class="options">
+                    <h6>₹ 85</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Burgers  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Sandwich menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all sandwich">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/sandwiches/veg_sandwich.png" alt="Veg Sandwich"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Veg Sandwich</h5>
+                  <div class="options">
+                    <h6>₹ 40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all sandwich">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/sandwiches/paneer_sandwich.png" alt="Paneer Sandwich"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Paneer Sandwich</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all sandwich">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/sandwiches/egg_sandwich.png" alt="Egg Sandwich"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Egg Sandwich</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all sandwich">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/sandwiches/chicken_sandwich.png" alt="Chicken Sandwich"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Chicken Sandwich</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sandwich  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Nachos menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all nachos">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/nachos/cheese_loaded_nachos.png" alt="Cheese Loaded Nachos"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cheese Loaded Nachos</h5>
+                  <div class="options">
+                    <h6>₹ 90</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Nachos  menu end here-->
+
+          <!-- ********************** -->
+
+          <!-- Egg menu start here -->
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/boiled egg.png" alt="Boiled Egg"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Boiled Egg</h5>
+                  <div class="options">
+                    <h6>₹ 15</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/bulls eye.png" alt="Bulls Eye"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Bulls Eye Single/Double</h5>
+                  <div class="options">
+                    <h6>₹ 20/30</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/omlete single and double.png" alt="Omlet"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Omlet Single/Double</h5>
+                  <div class="options">
+                    <h6>₹ 25/35</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/bread omlet.png" alt="Bread Omlet"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Bread Omlet Single/Double</h5>
+                  <div class="options">
+                    <h6>₹ 30/40</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/cheese bread omlet.png" alt="Cheese Bread Omlet"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Cheese Bread Omlet Single/Double</h5>
+                  <div class="options">
+                    <h6>₹ 40/50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-4 all egg">
+            <div class="box">
+              <div>
+                <div class="img-box">
+                  <img src="../images/menus/egg/egg stumbler.png" alt="Egg Stumbler"  loading="lazy"/>
+                </div>
+                <div class="detail-box">
+                  <h5>Egg Stumbler</h5>
+                  <div class="options">
+                    <h6>₹ 50</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Egg  menu end here-->
+
+          <!-- ********************** -->
+        </div>
+        <div class="btn-box">
+          <a href=""> View More </a>
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          View More
-        </a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- end food section -->
+    <!-- end food section -->
 
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 footer-col">
-          <div class="footer_contact">
-            <h4>
-              Contact Us
-            </h4>
-            <div class="contact_link_box">
-              <a href="https://www.google.com/maps?q=12.554972,75.385056" target="_blank">
-
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span>
-                  Location
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  Call +91 7994173713
-                </span>
-              </a>
-              <a href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>
-                  chaimonksullia@gmail.com
-                </span>
-              </a>
+    <!-- footer section -->
+    <footer class="footer_section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 footer-col">
+            <div class="footer_contact">
+              <h4>Contact Us</h4>
+              <div class="contact_link_box">
+                <a
+                  href="https://www.google.com/maps?q=12.554972,75.385056"
+                  target="_blank"
+                >
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Location </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call +91 7994173713 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> chaimonksullia@gmail.com </span>
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4 footer-col">
-          <div class="footer_detail">
-            <a href="" class="footer-logo">
-              Chai_monk
-            </a>
-            <p>
-              Chai Monk goes beyond the conventional tea-drinking experience. We host regular tea ceremonies, workshops, and events that delve into the rich cultural and historical aspects of tea.
-            </p>
-            <div class="footer_social">
-              <a href="#">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-              </a>
-              <!-- <a href="">
+          <div class="col-md-4 footer-col">
+            <div class="footer_detail">
+              <a href="" class="footer-logo"> Chai_monk </a>
+              <p>
+                Chai Monk goes beyond the conventional tea-drinking experience.
+                We host regular tea ceremonies, workshops, and events that delve
+                into the rich cultural and historical aspects of tea.
+              </p>
+              <div class="footer_social">
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <!-- <a href="">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
               </a> -->
-              <!-- <a href="">
+                <!-- <a href="">
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
               </a> -->
-              <a href="https://www.instagram.com/chai__monk/" target="_blank">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-             
+                <a href="https://www.instagram.com/chai__monk/" target="_blank">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
             </div>
           </div>
+          <div class="col-md-4 footer-col">
+            <h4>Opening Hours</h4>
+            <p>Everyday</p>
+            <p>10.00 Am -12.00 am</p>
+          </div>
         </div>
-        <div class="col-md-4 footer-col">
-          <h4>
-            Opening Hours
-          </h4>
+        <div class="footer-info">
           <p>
-            Everyday
-          </p>
-          <p>
-            10.00 Am -12.00 am
+            &copy; <span id="displayYear"></span> made with love by
+            <a href="#" title="Shabarish,Abhijith,Delvin,Azmal" target="_blank"
+              >Team Alavaladhy's</a
+            >
           </p>
         </div>
       </div>
-      <div class="footer-info">
-        <p>
-          
-          &copy; <span id="displayYear"></span> made with love by
-          <a href="#" title="Shabarish,Abhijith,Delvin,Azmal" target="_blank">Team Alavaladhy's</a>
-        </p>
-      </div>
-    </div>
-  </footer> 
-  <!-- footer section -->
+    </footer>
+    <!-- footer section -->
 
-  <!-- jQery -->
-  <script src="../js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <!-- bootstrap js -->
-  <script src="../js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-  </script>
-  <!-- isotope js -->
-  <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
-  <!-- nice select -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
-  <!-- custom js -->
-  <script src="../js/custom.js"></script>
-  <!-- Google Map -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
-  </script>
-  <!-- End Google Map -->
-
-</body>
-
+    <!-- jQery -->
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js -->
+    <script src="../js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- isotope js -->
+    <script src="https://unpkg.com/isotope-layout@3.0.4/dist/isotope.pkgd.min.js"></script>
+    <!-- nice select -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+    <!-- custom js -->
+    <script src="../js/custom.js"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+  </body>
 </html>
